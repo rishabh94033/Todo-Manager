@@ -56,5 +56,21 @@ app.delete("/todos/:idoftodo", async function(req,res){
         res.status(200).json({ message: 'Todo deleted successfully' });
 }})
 
+app.put("/edit", async function (req,res) {
+    const id=req.body.id;
+    const response=await todos.updateOne({
+        _id:id
+    },
+{
+ title:req.body.title,
+ description:req.body.description   
+})  
+
+if(response){
+    return res.json({
+        message:"todo edited"
+    })
+}
+})
 
 app.listen(3000);

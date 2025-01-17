@@ -9,7 +9,7 @@ export default function Todos(){
             <Appbar/>
         <div className="ml-40 mr-40 mt-10">
             {todos.map((todo)=>(
-                <Todo key={todo.id}title={todo.title} description={todo.description} completed={todo.completed}/>
+                <Todo key={todo.id}title={todo.title} description={todo.description} completed={todo.completed} id={todo._id} />
             ))}
         </div>
         </div>
