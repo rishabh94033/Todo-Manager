@@ -28,7 +28,7 @@ Make sure you have the following installed:
  - MongoDb
 
 ### Usage
-- Open your browser and go to http://localhost:3000 for the frontend.
+- Open your browser and go to http://localhost:5173 for the frontend.
 - Ensure the backend server is running on http://localhost:3000.
 
 ### Contact
